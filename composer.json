@@ -1,0 +1,35 @@
+{
+    "name": "gravatalonga/driver-manager",
+    "description": "Driver manager is a class responsible to hold information to configure another objects, for example, database connections, logs configurations, etc",
+    "type": "library",
+    "keywords": ["config manager", "manager", "configuration", "driver configuration", "drivers", "settings"],
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.83",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "phpunit/phpunit": "^9",
+        "infection/infection": "^0.21.5",
+        "phly/keep-a-changelog": "^2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gravatalonga\\DriverManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Fontes",
+            "email": "jonathan.alexey16@gmail.com"
+        }
+    ],
+    "scripts": {
+        "phpstan": "phpstan analyze -l max src",
+        "csfixer": "php-cs-fixer fix src",
+        "test": "phpunit"
+    }
+}
