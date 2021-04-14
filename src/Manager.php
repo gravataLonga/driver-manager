@@ -1,8 +1,8 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Gravatalonga\DriverManager;
 
-class Manager
+final class Manager
 {
     /**
      * @var array<string, mixed>
